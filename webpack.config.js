@@ -1,14 +1,7 @@
 /* global module require */
 
-const path = require('path');
+const commonConfig = require('./webpack.common');
 
-module.exports = {
-  entry: {
-    page1: './src/index',
-    page2: './src/index2'
-  },
-  output: {
-    path: path.join(__dirname + 'dist'),
-    filename: '[name].bundle.js'
-  }
-}
+module.exports = (env) => {
+  return Object.assign({mode: env.mode}, commonConfig);
+};
