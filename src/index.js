@@ -1,9 +1,6 @@
 import foo from './foo';
-
 import {a, b} from './bar';
 
-console.log('foo', foo);
-
-console.log('a', a);
-
-console.log('b', b);
+const button = document.createElement('button');
+button.innerText = 'BUTTON';
+document.body.appendChild(button);
