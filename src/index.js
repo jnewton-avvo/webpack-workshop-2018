@@ -1,5 +1,6 @@
 import foo from './foo';
 import {a, b} from './bar';
+import './index.css';
 
 // creates JS module exporting base64-encoded image:
 import imgSrc from './img/space-cat.png';
