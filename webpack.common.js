@@ -17,7 +17,14 @@ module.exports = {
     rules: [
       {
         test: /\.png$/,
-        use: 'url-loader'
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000 // byte size
+            }
+          }
+        ]
       }
     ]
   }
