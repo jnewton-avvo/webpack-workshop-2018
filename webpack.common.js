@@ -12,5 +12,13 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin()
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.png$/,
+        use: 'url-loader'
+      }
+    ]
+  }
 };
