@@ -2,6 +2,7 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   output: {
@@ -9,6 +10,7 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   plugins: [
+    new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin()
   ]
 };
