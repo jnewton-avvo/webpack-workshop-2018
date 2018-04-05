@@ -11,7 +11,7 @@
     "url": "git+https://github.com/TheLarkInn/webpack-workshop-2018.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jack Newton",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
@@ -19,5 +19,6 @@
   "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
-  }
+  },
+  "dependencies": {}
 }
