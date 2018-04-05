@@ -3,7 +3,7 @@
 const webpackMerge = require('webpack-merge');
 const commonConfig = require('./webpack.common');
 
-module.exports = (env) => {
+module.exports = ({mode}) => {
   // const envConfig = require(`webpack.${env.mode}`);
-  return webpackMerge({mode: env.mode}, commonConfig);
+  return webpackMerge({mode}, commonConfig);
 };
