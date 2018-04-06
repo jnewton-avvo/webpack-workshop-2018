@@ -1,6 +1,7 @@
-import foo from './foo';
 import {a, b} from './bar';
 import './index.css';
+
+const foo = () => import('./foo');
 
 // creates JS module exporting base64-encoded image:
 import imgSrc from './img/space-cat.png';
@@ -10,6 +11,12 @@ console.log('imgSrc', imgSrc);
 
 const button = document.createElement('button');
 button.innerText = 'BUTTON';
+
+button.addEventListener('click', (ev) => {
+  foo().then(module => {
+    debugger;
+  });
+});
 
 const img = document.createElement('img');
 img.src = imgSrc;
